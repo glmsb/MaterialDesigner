@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/imv_ctl">
+
+    <!--fitsSystemWindows 这句必须加在这里-->
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fitsSystemWindows="true">
+
+        <com.demo.wyd.materialDesignerDemo.view.CounterView
+            android:id="@+id/btn_count_view"
+            android:background="@mipmap/imv_scenery"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="30%" />
+
+        <Button
+            android:id="@+id/btn_scroll"
+            android:layout_toEndOf="@id/btn_count_view"
+            android:layout_toRightOf="@id/btn_count_view"
+            android:background="@color/colorAccent"
+            android:text="滑动View"
+            app:layout_heightPercent="20%"
+            app:layout_marginLeftPercent="30%"
+            app:layout_widthPercent="40%"
+            tools:ignore="HardcodedText" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <!--View类必须是CoordinatorLayout的直接子类，必须支持嵌套滚动-->
+    <com.demo.wyd.materialDesignerDemo.view.SwipeRecyclerView
+        android:id="@+id/swipe_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

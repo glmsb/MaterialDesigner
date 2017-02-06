@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!--标题栏的颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!--状态栏的颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!--随主题而改变的颜色(如进度条，输入框，输入光标，复选框被选中之后的颜色）-->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--标题栏文字的颜色-->
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+
+        <!--布局中文字的颜色-->
+        <item name="android:textColor">@color/mainTextColor</item>
+
+        <!--主要的背景色-->
+        <item name="android:windowBackground">@android:color/background_light</item>
+
+        <!--初始化应用时窗口是透明的，覆盖instant run 的白屏界面-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <!--替换（改变）系统默认的分割线属性值-->
+        <item name="android:listDivider">@drawable/recycler_divider_style</item>
+    </style>
+
+    <!--自定义TabLayout的样式-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <!--设置下划线的颜色-->
+        <item name="tabIndicatorColor">#5999FF</item>
+    </style>
+</resources>

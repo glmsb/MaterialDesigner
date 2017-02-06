@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--状态改变时，新状态展示时的淡入和淡出时间，以毫秒为单位-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="5000"
+    android:exitFadeDuration="3000">
+    <!-- item是从上往下匹配的，如果匹配到一个item那它就将采用这个item -->
+    <item android:drawable="@drawable/bg_rectangle_with_stroke_dash" android:state_pressed="true" />
+</selector>

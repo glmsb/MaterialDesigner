@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--选中后的改变文字的颜色-->
+    <item android:color="@color/c_white" android:state_selected="true" />
+
+    <!--默认的文字的颜色-->
+    <item android:color="@color/c_emphasize_blue" android:state_selected="false" />
+</selector>

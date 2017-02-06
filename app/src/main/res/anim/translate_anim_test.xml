@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--画面转换位置移动动画效果
+    android:fromXDelta    起始点X轴坐标，可以是数值、百分数、百分数p 三种样式，比如 50、50%、50%p，具体意义已在scale标签中讲述，这里就不再重讲
+    android:fromYDelta    起始点Y轴从标，可以是数值、百分数、百分数p 三种样式；
+    android:toXDelta      结束点X轴坐标
+    android:toYDelta      结束点Y轴坐标
+-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="5000"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/cycle_interpolator"
+
+    android:fromXDelta="-70%"
+    android:fromYDelta="-120"
+    android:toXDelta="50%"
+    android:toYDelta="35%p" />

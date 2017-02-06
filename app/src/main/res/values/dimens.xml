@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--统一文字的大小-->
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_big">21sp</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+
+    <!--控件固定宽高时的高度-->
+    <dimen name="layout_height">200dp</dimen>
+
+    <!--圆角的大小-->
+    <dimen name="rectangle_corners">10dp</dimen>
+
+    <!--padding 值-->
+    <dimen name="padding_left$right">6dp</dimen>
+    <dimen name="padding_top$bottom">3dp</dimen>
+
+    <!--stroke 描边的宽-->
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="stroke_dash_width">4dp</dimen>
+</resources>

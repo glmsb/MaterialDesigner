@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:text="从相册选取图片"
+        android:background="@drawable/bg_tab_blue_white"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_tab_blue_white"
+        android:gravity="center"
+        android:text="拍照获取图片"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imv_pic"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/bg_imv_layer_list"
+        android:contentDescription="@string/app_name" />
+</LinearLayout>

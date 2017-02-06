@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MaterialDesigner</string>
+    <string name="btn_text">hello_ketty</string>
+    <string name="fab_scrolling_view_behavior">com.demo.wyd.materialDesignerDemo.util.FabBehavior</string>
+</resources>

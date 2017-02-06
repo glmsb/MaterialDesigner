@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- size设置形状的大小 -->
+    <size
+        android:width="@dimen/rectangle_corners"
+        android:height="@dimen/rectangle_corners" />
+
+    <!-- gradient设置渐变 -->
+    <!--使用radial渐变时，必须指定渐变的半径-->
+    <gradient
+        android:centerColor="@color/c_white"
+        android:endColor="@color/colorAccent"
+        android:gradientRadius="@dimen/rectangle_corners"
+        android:startColor="@color/c_emphasize_blue"
+        android:type="radial" />
+
+</shape>

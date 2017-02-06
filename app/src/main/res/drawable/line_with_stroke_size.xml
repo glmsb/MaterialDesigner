@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+    <!-- 实际显示的线 -->
+    <stroke
+        android:width="@dimen/stroke_width"
+        android:color="@android:color/holo_purple" />
+
+    <!-- size的android:height属性定义的是整个形状区域的高度-->
+    <size
+        android:width="@dimen/activity_horizontal_margin"
+        android:height="@dimen/activity_vertical_margin" />
+
+</shape>

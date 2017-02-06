@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--shareInterpolator取值true或false，取true时，指在AnimationSet中定义一个插值器，它下面的所有动画共同。如果设为false，则表示它下面的动画自己定义各自的插值器。-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="6000"
+    android:shareInterpolator="true"
+    android:interpolator="@android:anim/anticipate_overshoot_interpolator">
+
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+    <scale
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+    <rotate
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="360" />
+
+    <translate
+        android:fromXDelta="-100"
+        android:fromYDelta="-100"
+        android:toXDelta="100"
+        android:toYDelta="100" />
+
+</set>

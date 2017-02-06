@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--delay:指每个Item的动画开始延时，取值是android:animation所指定动画时长的倍数，
+    取值类型可以是float类型，也可以是百分数，默认是0.5,
+    即一个Item的动画会在上一个item动画完成后延时单次动画时长的delay倍时间开始.
+
+    animationOrder:指viewGroup中的控件动画开始顺序，取值有normal(正序)、reverse(倒序)、random(随机).
+
+    animation：指定每个item入场所要应用的动画。仅能指定res/aim文件夹下的animation定义的动画，不可使用animator动画。
+-->
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/alpha_anim_test"
+    android:animationOrder="normal"
+    android:delay="0.8" />

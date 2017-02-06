@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- directionPriority指gridView动画优先级，取值有row,column,none.意义分别为行优先，列优先，和无优先级（同时进行）。
+     direction：gridView动画方向,默认值为left_to_right | top_to_bottom；即从上往下，从左往右。
+-->
+<gridLayoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/alpha_anim_test"
+    android:columnDelay="0.8"
+    android:direction="right_to_left|top_to_bottom"
+    android:directionPriority="none"
+    android:rowDelay="0.4" />

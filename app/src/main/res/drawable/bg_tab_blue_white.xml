@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--选中后的改变背景颜色-->
+    <item android:drawable="@color/c_emphasize_blue" android:state_selected="true" />
+
+    <!--点击后的背景颜色-->
+    <item android:drawable="@color/c_emphasize_blue" android:state_pressed="true" />
+
+    <!--默认的背景颜色-->
+    <item android:drawable="@color/c_white" android:state_selected="false" />
+</selector>

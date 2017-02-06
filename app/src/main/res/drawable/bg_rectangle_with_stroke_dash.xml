@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:shape指定形状类型，默认为rectangle -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- corners设置圆角，只适用于rectangle -->
+    <corners
+        android:bottomRightRadius="@dimen/rectangle_corners"
+        android:topLeftRadius="@dimen/rectangle_corners" />
+
+    <!-- stroke设置描边 -->
+    <stroke
+        android:width="@dimen/stroke_width"
+        android:color="@color/c_emphasize_blue"
+        android:dashGap="@dimen/stroke_width"
+        android:dashWidth="@dimen/stroke_dash_width" />
+
+    <!-- padding设置内容区域离边界的间距 -->
+    <padding
+        android:bottom="@dimen/padding_top$bottom"
+        android:left="@dimen/padding_left$right"
+        android:right="@dimen/padding_left$right"
+        android:top="@dimen/padding_top$bottom" />
+</shape>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AppTheme使用的色值 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--主要的文字的颜色-->
+    <color name="mainTextColor">#00ff00</color>
+
+    !-- 强调色(天蓝色) -->
+    <color name="c_emphasize_blue">#12b7f5</color>
+    <!-- 白色 -->
+    <color name="c_white">#ffffff</color>
+</resources>

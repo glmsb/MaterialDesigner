@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这里设置的layout_width和layout_height属性不会起作用，只有在父布局中才有作用-->
+
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_delete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recycler_divider_style"
+    android:text="删除"
+    android:textSize="25sp"
+    tools:ignore="HardcodedText" />

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:title="Android 样式" />
+
+    <!--<GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_columnSpan="3"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:text="登陆界面"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_row="1"
+            android:text="账号" />
+
+        <EditText
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal|center"
+            android:hint="请输入账号" />
+
+        <TextView
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:text="密码" />
+
+        <EditText
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:hint="******"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_column="1"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_row="3"
+            android:text="确定" />
+
+        <Button
+            android:layout_column="2"
+            android:layout_gravity="end"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:text="取消" />
+    </GridLayout>-->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+
+        <android.support.v7.widget.AppCompatButton
+            android:background="@drawable/bg_btn_pressed"
+            android:text="虚线描边镂空圆角"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:background="@drawable/bg_oval_with_gradient"
+            android:text="badgeView"
+            tools:ignore="HardcodedText" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:text="进度条"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="1"
+            android:height="2dp"
+            android:background="@drawable/line_with_stroke_size"
+            android:layerType="software" />
+
+    </GridLayout>
+
+    <View
+        android:layout_width="@dimen/layout_height"
+        android:layout_height="@dimen/layout_height"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:background="@drawable/rotate_ring_with_gradient_stroke" />
+
+</LinearLayout>

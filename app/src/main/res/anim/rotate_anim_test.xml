@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 画面转移旋转动画效果
+    android:fromDegrees     开始旋转的角度位置，正值代表顺时针方向度数，负值代码逆时针方向度数
+    android:toDegrees       结束时旋转到的角度位置，正值代表顺时针方向度数，负值代码逆时针方向度数
+-->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:duration="5000"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+
+    android:fromDegrees="0"
+    android:toDegrees="-180"
+    android:pivotX="50%"
+    android:pivotY="30%p"/>
+
