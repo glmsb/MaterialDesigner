@@ -9,6 +9,7 @@
 
     <!--fitsSystemWindows 这句必须加在这里-->
     <android.support.percent.PercentRelativeLayout
+        android:id="@+id/pl_percent_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -40,6 +41,6 @@
         android:layout_gravity="bottom"
         app:behavior_hideable="true"
         app:behavior_peekHeight="0dp"
-        app:layout_behavior="@string/bottom_sheet_behavior"/>
+        app:layout_behavior="@string/bottom_sheet_behavior" />
 
 </android.support.design.widget.CoordinatorLayout>

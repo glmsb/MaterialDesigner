@@ -9,6 +9,7 @@ import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -107,7 +108,7 @@ public class Fragment1 extends Fragment {
                         public void onClick(View v) {
                             Snackbar.make(parentCLRoot, "login cancel..", Snackbar.LENGTH_INDEFINITE).show();//一直显示
                         }
-                    }).show();
+                    }).setActionTextColor(ContextCompat.getColor(getContext(), R.color.colorAccent)).show();
                 }
             }
         });

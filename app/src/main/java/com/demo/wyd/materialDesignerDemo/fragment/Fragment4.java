@@ -3,6 +3,7 @@ package com.demo.wyd.materialDesignerDemo.fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.percent.PercentRelativeLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -74,8 +75,10 @@ public class Fragment4 extends Fragment {
      */
     private void dealScrollView() {
 //        Button btnScrollView = (Button) rootView.findViewById(R.id.btn_scroll);
-        View btnScrollView = (View) rootView.findViewById(R.id.btn_count_view);
-       /* btnScrollView.setOnClickListener(new View.OnClickListener() {
+        View btnScrollView = rootView.findViewById(R.id.btn_count_view);
+        PercentRelativeLayout percentLayout = (PercentRelativeLayout) rootView.findViewById(R.id.pl_percent_layout);
+        percentLayout.scrollTo(0, -(300));
+        /* btnScrollView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Snackbar.make(getActivity().findViewById(R.id.cl_root), "clickAble", Snackbar.LENGTH_SHORT).show();

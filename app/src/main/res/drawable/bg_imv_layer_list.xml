@@ -7,6 +7,7 @@
             android:tileMode="clamp"
             android:src="@mipmap/imv_ctl"/>
     </item>
+
     <item
         android:left="10dp"
         android:top="10dp">
@@ -15,6 +16,7 @@
             android:gravity="center"
             android:src="@mipmap/imv_scenery" />
     </item>
+
     <item
         android:left="40dp"
         android:top="40dp">

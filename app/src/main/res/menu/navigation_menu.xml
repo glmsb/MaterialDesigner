@@ -4,9 +4,13 @@
     tools:ignore="HardcodedText">
     <group
         android:checkableBehavior="single">
+
+        <!--android:titleCondensed
+        定义一个简要的标题，以便在普通的标题太长时来使用-->
         <item
             android:id="@+id/item_one"
             android:icon="@mipmap/ic_launcher"
+            android:titleCondensed="@string/app_name"
             android:title="沉浸式状态栏" />
         <item
             android:id="@+id/item_two"
