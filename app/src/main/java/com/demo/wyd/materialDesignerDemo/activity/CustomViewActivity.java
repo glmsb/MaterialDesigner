@@ -83,7 +83,7 @@ public class CustomViewActivity extends AppCompatActivity {
         });
 
 
-        /** bottomSheet 的状态监听与回调 */
+        /* bottomSheet 的状态监听与回调 */
         behavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {

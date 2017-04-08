@@ -57,7 +57,7 @@ import java.util.List;
 //    FloatingActionButton
 //    CoordinatorLayout
 //    TextInputLayout
-//    TableLayout
+//    TabLayout
 //    AppBarLayout
 //    CollapsingToolbarLayout
 //    DrawerLayout

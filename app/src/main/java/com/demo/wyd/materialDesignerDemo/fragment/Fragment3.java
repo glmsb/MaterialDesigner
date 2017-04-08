@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.NestedScrollView;
@@ -20,7 +19,6 @@ import android.view.animation.TranslateAnimation;
 
 import com.demo.wyd.materialDesignerDemo.R;
 import com.demo.wyd.materialDesignerDemo.adapter.RecyclerAdapter;
-import com.demo.wyd.materialDesignerDemo.util.FabBehavior;
 import com.demo.wyd.materialDesignerDemo.view.DividerItemDecoration;
 import com.umeng.analytics.MobclickAgent;
 
@@ -85,6 +83,7 @@ public class Fragment3 extends Fragment {
 //        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(8, LinearLayoutManager.HORIZONTAL);
 //        GridLayoutManager gridLayoutManager = new GridLayoutManager(mContext, 3);
         recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setNestedScrollingEnabled(false);//解决嵌套滚动的问题
         recyclerView.setItemAnimator(new DefaultItemAnimator());//设置增加或删除条目的动画
         recyclerView.addItemDecoration(new DividerItemDecoration(mContext, LinearLayoutManager.HORIZONTAL, 6, R.color.c_emphasize_blue));
 //        recyclerView.addItemDecoration(new DividerItemDecoration(mContext, LinearLayoutManager.VERTICAL, R.drawable.recycler_divider_style));
@@ -103,21 +102,21 @@ public class Fragment3 extends Fragment {
             }
         });
 
-//        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(mContext);
-//        View view = LayoutInflater.from(mContext).inflate(R.layout.delete_button, null);
-//        bottomSheetDialog.setContentView(view);
-//        bottomSheetDialog.show();
+        /*final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(mContext);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.delete_button, null);
+        bottomSheetDialog.setContentView(view);
+        bottomSheetDialog.show();
         FabBehavior fabBehavior = FabBehavior.from(((FloatingActionButton) getActivity().findViewById(R.id.fab_button)));
         fabBehavior.setOnScrollStateChangeListener(new FabBehavior.OnScrollStateChangeListener() {
             @Override
             public void stateChange(boolean isScrollUp) {
-               /* if (isScrollUp) {
+                if (isScrollUp) {
                     bottomSheetDialog.show();
                 } else {
                     bottomSheetDialog.dismiss();
-                }*/
+                }
             }
-        });
+        });*/
 
         buildLayoutAnimation(recyclerView);
     }
