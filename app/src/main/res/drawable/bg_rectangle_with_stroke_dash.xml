@@ -16,8 +16,8 @@
 
     <!-- padding设置内容区域离边界的间距 -->
     <padding
-        android:bottom="@dimen/padding_top$bottom"
-        android:left="@dimen/padding_left$right"
-        android:right="@dimen/padding_left$right"
-        android:top="@dimen/padding_top$bottom" />
+        android:bottom="@dimen/padding_top_bottom"
+        android:left="@dimen/padding_left_right"
+        android:right="@dimen/padding_left_right"
+        android:top="@dimen/padding_top_bottom" />
 </shape>

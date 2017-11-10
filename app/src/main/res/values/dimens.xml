@@ -15,8 +15,8 @@
     <dimen name="rectangle_corners">10dp</dimen>
 
     <!--padding 值-->
-    <dimen name="padding_left$right">6dp</dimen>
-    <dimen name="padding_top$bottom">3dp</dimen>
+    <dimen name="padding_left_right">6dp</dimen>
+    <dimen name="padding_top_bottom">3dp</dimen>
 
     <!--stroke 描边的宽-->
     <dimen name="stroke_width">1dp</dimen>
