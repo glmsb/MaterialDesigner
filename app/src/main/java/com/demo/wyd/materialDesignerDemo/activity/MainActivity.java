@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         Snackbar.make(toolbar, "onCreate", Snackbar.LENGTH_LONG).show();
         MobclickAgent.onProfileSignIn("myLogin");
-        /** 设置是否对日志信息进行加密, 默认false(不加密). */
+        /* 置是否对日志信息进行加密, 默认false(不加密). */
 //        MobclickAgent.enableEncrypt(true);  //6.0.0版本及以后
 //        getDeviceInfo(this);
     }
